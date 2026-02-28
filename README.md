@@ -1,4 +1,18 @@
 # ai-pilot-extractor
 An AI-steered Python web scraper designed for complex data extraction from dynamic sites.
 
-This project demonstrates an AI Pilot workflow. I used LLM-assisted coding to rapidly prototype the extraction logic, then manually refined the CSS selectors and error-handling to ensure 100% data reliability. This is a primary example of Vibe Coding—steering AI to handle the boilerplate while I enforce technical precision.
+This repository demonstrates a Human-in-the-loop (HITL) workflow for high-fidelity data extraction, specifically tailored for the Tendem Project environment.
+
+🛠️ Technical Overview
+Language: Python 3.x
+
+Libraries: BeautifulSoup4, Requests, JSON/CSV
+
+Workflow: Automated Web Scraping -> AI Metadata Enrichment -> Data Validation/Refining
+
+🎯 Project Strategy
+Pilot-Driven Scraping: Using AI agents to generate initial DOM traversal logic, manually refined to handle dynamic elements and bypass basic anti-bot measures.
+
+Vibe Processing: Simulating LLM-driven metadata generation (summarization/intent-checking) for raw data points.
+
+Data Integrity Refinery: A post-processing script that validates the "AI-generated" JSON and converts it into a structured, production-ready CSV.
